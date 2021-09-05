@@ -20,7 +20,7 @@ export default function App() {
       <FlatList 
         data={courseGoals} 
         keyExtractor={(item,index)=>item.id}
-        renderItem={({item})=> <GoalItem title={item.value}/> }
+        renderItem={({item})=> <GoalItem title={item.value} onDelete={()=>alert("You've touched me")}/> }
       />
 
     </View>
